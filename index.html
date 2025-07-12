@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Infographic: Văn Hóa và Tín Ngưỡng Dân Tộc H'Mông</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Be Vietnam Pro', sans-serif;
+            background-color: #f0f4f8;
+        }
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .chart-container {
+            position: relative;
+            width: 100%;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+            height: 350px;
+            max-height: 400px;
+        }
+        @media (min-width: 768px) {
+            .chart-container {
+                height: 400px;
+            }
+        }
+        .text-energetic-red { color: #FF6B6B; }
+        .text-energetic-yellow { color: #FFD166; }
+        .text-energetic-green { color: #06D6A0; }
+        .text-energetic-blue { color: #118AB2; }
+        .text-energetic-dark { color: #073B4C; }
+        .bg-energetic-red { background-color: #FF6B6B; }
+        .bg-energetic-yellow { background-color: #FFD166; }
+        .bg-energetic-green { background-color: #06D6A0; }
+        .bg-energetic-blue { background-color: #118AB2; }
+        .bg-energetic-dark { background-color: #073B4C; }
+        .flowchart-step {
+            border: 2px solid #118AB2;
+            background-color: #ffffff;
+        }
+        .flowchart-arrow {
+            color: #118AB2;
+            font-size: 2.5rem;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body class="text-energetic-dark">
+
+    <div class="container mx-auto p-4 md:p-8">
+        
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-energetic-blue mb-2">HÀNH TRÌNH TÂM LINH CỦA NGƯỜI H'MÔNG</h1>
+            <p class="text-lg md:text-xl text-gray-600">Khám phá sự giao thoa giữa tín ngưỡng truyền thống và những biến đổi tôn giáo đương đại.</p>
+        </header>
+
+        <main class="space-y-16">
+
+            <section id="gioi-thieu" class="card grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                <div class="md:col-span-1 text-center">
+                    <div class="text-8xl font-extrabold text-energetic-red">1.39</div>
+                    <div class="text-3xl font-bold text-energetic-dark">TRIỆU NGƯỜI</div>
+                    <p class="text-gray-500 mt-2">(Thống kê 2019)</p>
+                </div>
+                <div class="md:col-span-2">
+                    <h2 class="text-3xl font-bold text-energetic-blue mb-4">Họ là ai?</h2>
+                    <p class="mb-4">Dân tộc H'Mông là một trong những cộng đồng dân tộc thiểu số đông đảo nhất Việt Nam, nổi tiếng với lịch sử di cư lâu đời, văn hóa độc đáo và ý chí tự cường. Họ chủ yếu sinh sống ở các vùng núi cao phía Bắc, duy trì một lối sống gắn bó mật thiết với thiên nhiên.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-energetic-red/20 text-energetic-red text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">H'Mông Trắng</span>
+                        <span class="bg-energetic-blue/20 text-energetic-blue text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">H'Mông Đen</span>
+                        <span class="bg-energetic-green/20 text-energetic-green text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">H'Mông Hoa</span>
+                        <span class="bg-energetic-yellow/20 text-energetic-dark text-sm font-semibold mr-2 px-2.5 py-0.5 rounded-full">H'Mông Xanh</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tin-nguong" class="text-center">
+                <h2 class="text-3xl font-bold text-energetic-blue mb-4">Thế Giới Tâm Linh Truyền Thống</h2>
+                <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-12">Trước mọi ảnh hưởng từ bên ngoài, đời sống tinh thần của người H'Mông được chi phối bởi một hệ thống tín ngưỡng phức hợp, nơi vạn vật đều có linh hồn và con người phải liên tục "giao dịch" với thế giới siêu nhiên để tồn tại.</p>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="card text-left">
+                        <h3 class="text-2xl font-bold mb-4 text-energetic-dark">Trụ Cột Tín Ngưỡng</h3>
+                        <p class="mb-4 text-gray-600">Hệ thống tín ngưỡng của người H'Mông được ví như một kiềng ba chân vững chắc, với Shaman giáo đóng vai trò trung tâm trong việc giải quyết các khủng hoảng tâm linh và chữa bệnh.</p>
+                        <div class="chart-container">
+                            <canvas id="beliefChart"></canvas>
+                        </div>
+                    </div>
+                    <div class="card text-left">
+                        <h3 class="text-2xl font-bold mb-4 text-energetic-dark">Thế Giới "Ma": Thiện và Ác</h3>
+                         <p class="mb-6 text-gray-600">Người H'Mông tin vào sự tồn tại của vô số các linh hồn ("ma") có thể ban phước hoặc giáng họa. Việc thờ cúng "ma thiện" và xua đuổi "ma ác" là một phần không thể thiếu trong cuộc sống hàng ngày.</p>
+                        <div class="space-y-4">
+                            <div class="p-4 rounded-lg bg-energetic-green/10 border-l-4 border-energetic-green">
+                                <h4 class="font-bold text-lg">Ma Thiện (Phù hộ)</h4>
+                                <p class="text-sm">Bao gồm ma nhà (`Xử ca`), ma cửa (`Xìa mình`), ma bếp và đặc biệt là tổ tiên, những người luôn dõi theo và che chở cho con cháu.</p>
+                            </div>
+                            <div class="p-4 rounded-lg bg-energetic-red/10 border-l-4 border-energetic-red">
+                                <h4 class="font-bold text-lg">Ma Ác (Gây hại)</h4>
+                                <p class="text-sm">Luôn rình rập để bắt linh hồn người sống, gây ra bệnh tật, tai ương và những cái chết bất ngờ. Cần có thầy cúng để chiến đấu chống lại chúng.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="bien-doi" class="text-center">
+                <h2 class="text-3xl font-bold text-energetic-blue mb-4">Câu Chuyện Về Hai Đức Tin: Sự Biến Đổi Lớn</h2>
+                <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-12">Nghiên cứu cho thấy một sự thật đáng ngạc nhiên: không phải Phật giáo, mà chính Kitô giáo mới là tôn giáo ngoại lai có ảnh hưởng sâu sắc và mạnh mẽ nhất đến cộng đồng người H'Mông trong vài thập kỷ qua.</p>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+                    <div class="card flex flex-col justify-center items-center bg-gray-100">
+                        <h3 class="text-2xl font-bold mb-2 text-gray-500">Phật Giáo?</h3>
+                        <div class="text-8xl font-extrabold text-gray-400 mb-2">0%</div>
+                        <p class="text-center text-gray-600">Hầu như không có bằng chứng về ảnh hưởng đáng kể của Phật giáo. Các yếu tố như rào cản địa lý, sự không tương thích về thần học đã khiến tôn giáo này gần như đứng ngoài lề đời sống tâm linh của họ.</p>
+                    </div>
+                    <div class="card flex flex-col justify-center items-center bg-energetic-blue text-white">
+                        <h3 class="text-2xl font-bold mb-2">Kitô Giáo (Tin Lành)!</h3>
+                        <div class="text-8xl font-extrabold mb-2">300K+</div>
+                        <p class="text-center">Người cải đạo từ cuối những năm 1980, chủ yếu qua các chương trình phát thanh bằng tiếng H'Mông. Đây là một trong những biến đổi xã hội lớn nhất của họ trong lịch sử hiện đại.</p>
+                    </div>
+                </div>
+                
+                <div class="card mt-8">
+                    <h3 class="text-2xl font-bold mb-4 text-center">Động Lực Thúc Đẩy Làn Sóng Cải Đạo</h3>
+                    <p class="max-w-3xl mx-auto text-center text-gray-600 mb-8">Sự thành công của Kitô giáo đến từ việc nó đưa ra những "giải pháp" hấp dẫn cho các vấn đề thực tiễn mà người H'Mông phải đối mặt.</p>
+                    <div class="chart-container">
+                        <canvas id="conversionDriversChart"></canvas>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tac-dong" class="text-center">
+                <h2 class="text-3xl font-bold text-energetic-blue mb-4">Con Đường Giao Thoa: Tác Động Hai Mặt</h2>
+                <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-12">Sự chuyển đổi tôn giáo đã tạo ra những thay đổi sâu sắc, vừa mang lại những tiến bộ xã hội, vừa đặt ra những thách thức lớn đối với việc bảo tồn bản sắc văn hóa truyền thống.</p>
+                <div class="card">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div class="p-6 rounded-lg bg-green-50">
+                            <h3 class="text-2xl font-bold text-energetic-green mb-4">Tích Cực 👍</h3>
+                            <ul class="space-y-3 text-left text-gray-700">
+                                <li class="flex items-start"><span class="text-energetic-green mr-2 mt-1">✔</span><span><strong>Giảm gánh nặng kinh tế:</strong> Loại bỏ các nghi lễ hiến tế tốn kém.</span></li>
+                                <li class="flex items-start"><span class="text-energetic-green mr-2 mt-1">✔</span><span><strong>Tiến bộ xã hội:</strong> Xóa bỏ các hủ tục như tảo hôn, thách cưới nặng nề; đề cao lối sống lành mạnh.</span></li>
+                                <li class="flex items-start"><span class="text-energetic-green mr-2 mt-1">✔</span><span><strong>Phát triển cộng đồng:</strong> Hình thành các điểm nhóm tôn giáo, tạo ra không gian tương trợ mới.</span></li>
+                            </ul>
+                        </div>
+                        <div class="p-6 rounded-lg bg-red-50">
+                            <h3 class="text-2xl font-bold text-energetic-red mb-4">Tiêu Cực 👎</h3>
+                            <ul class="space-y-3 text-left text-gray-700">
+                                <li class="flex items-start"><span class="text-energetic-red mr-2 mt-1">✖</span><span><strong>Xói mòn văn hóa:</strong> Từ bỏ thờ cúng tổ tiên - trụ cột tinh thần của xã hội H'Mông.</span></li>
+                                <li class="flex items-start"><span class="text-energetic-red mr-2 mt-1">✖</span><span><strong>Chia rẽ cộng đồng:</strong> Gây ra mâu thuẫn sâu sắc trong dòng họ và gia đình giữa người theo đạo và không theo đạo.</span></li>
+                                <li class="flex items-start"><span class="text-energetic-red mr-2 mt-1">✖</span><span><strong>Mất mát di sản:</strong> Các loại hình nghệ thuật, tri thức bản địa gắn với nghi lễ có nguy cơ thất truyền.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="bao-ton" class="text-center">
+                 <h2 class="text-3xl font-bold text-energetic-blue mb-4">Con Đường Phía Trước: Bảo Tồn Một Nền Văn Hóa Sống</h2>
+                <p class="max-w-3xl mx-auto text-lg text-gray-600 mb-12">Bảo tồn không phải là "đóng băng" quá khứ, mà là tạo điều kiện cho văn hóa tiếp tục sống, thích ứng và phát triển một cách sáng tạo trong bối cảnh mới.</p>
+                <div class="card">
+                    <div class="flex flex-col md:flex-row items-center justify-center space-y-4 md:space-y-0 md:space-x-4">
+                        <div class="flowchart-step text-center p-4 rounded-lg w-full md:w-1/4">
+                            <div class="text-4xl mb-2">📜</div>
+                            <h4 class="font-bold">Tư Liệu Hóa</h4>
+                            <p class="text-sm">Ghi chép, hệ thống hóa di sản truyền miệng (sử thi, bài cúng).</p>
+                        </div>
+                        <div class="flowchart-arrow hidden md:block">→</div>
+                        <div class="flowchart-arrow md:hidden">↓</div>
+                        <div class="flowchart-step text-center p-4 rounded-lg w-full md:w-1/4">
+                            <div class="text-4xl mb-2">🤝</div>
+                            <h4 class="font-bold">Thúc Đẩy Đối Thoại</h4>
+                            <p class="text-sm">Tạo không gian để các nhóm tín ngưỡng khác nhau hiểu và tôn trọng lẫn nhau.</p>
+                        </div>
+                        <div class="flowchart-arrow hidden md:block">→</div>
+                        <div class="flowchart-arrow md:hidden">↓</div>
+                        <div class="flowchart-step text-center p-4 rounded-lg w-full md:w-1/4">
+                             <div class="text-4xl mb-2">🎓</div>
+                            <h4 class="font-bold">Giáo Dục</h4>
+                            <p class="text-sm">Trao quyền cho thế hệ trẻ bằng cách dạy về lịch sử, văn hóa, nghệ thuật của dân tộc.</p>
+                        </div>
+                         <div class="flowchart-arrow hidden md:block">→</div>
+                        <div class="flowchart-arrow md:hidden">↓</div>
+                         <div class="flowchart-step text-center p-4 rounded-lg w-full md:w-1/4">
+                            <div class="text-4xl mb-2">🎉</div>
+                            <h4 class="font-bold">Phát Huy Lễ Hội</h4>
+                            <p class="text-sm">Hỗ trợ cộng đồng duy trì các lễ hội một cách thực chất, tránh "sân khấu hóa".</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="text-center mt-16 text-gray-500 text-sm">
+            <p>Infographic được tạo dựa trên phân tích tài liệu về "Ảnh hưởng của Phật giáo trong văn hóa và đời sống tinh thần của dân tộc người H’Mông ở Việt Nam".</p>
+            <p>&copy; 2025 - Canvas Infographics. Đã phân tích và trực quan hóa.</p>
+        </footer>
+    </div>
+
+    <script>
+        const energeticPalette = {
+            red: '#FF6B6B',
+            yellow: '#FFD166',
+            green: '#06D6A0',
+            blue: '#118AB2',
+            dark: '#073B4C'
+        };
+
+        function wrapLabel(str, maxWidth) {
+            if (str.length <= maxWidth) {
+                return str;
+            }
+            const words = str.split(' ');
+            let lines = [];
+            let currentLine = words[0];
+            for (let i = 1; i < words.length; i++) {
+                const word = words[i];
+                const width = currentLine.length + 1 + word.length;
+                if (width < maxWidth) {
+                    currentLine += ' ' + word;
+                } else {
+                    lines.push(currentLine);
+                    currentLine = word;
+                }
+            }
+            lines.push(currentLine);
+            return lines;
+        }
+
+        const tooltipTitleCallback = (tooltipItems) => {
+            const item = tooltipItems[0];
+            let label = item.chart.data.labels[item.dataIndex];
+            if (Array.isArray(label)) {
+              return label.join(' ');
+            }
+            return label;
+        };
+
+        const commonTooltipOptions = {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        title: tooltipTitleCallback
+                    },
+                    bodyFont: {
+                        size: 14,
+                        family: "'Be Vietnam Pro', sans-serif"
+                    },
+                    titleFont: {
+                        size: 16,
+                        family: "'Be Vietnam Pro', sans-serif",
+                        weight: 'bold'
+                    },
+                    backgroundColor: 'rgba(7, 59, 76, 0.9)',
+                    padding: 12,
+                    cornerRadius: 8,
+                }
+            }
+        };
+
+        const commonLegendOptions = {
+            position: 'bottom',
+            labels: {
+                font: {
+                    size: 14,
+                    family: "'Be Vietnam Pro', sans-serif"
+                },
+                color: energeticPalette.dark,
+                padding: 20
+            }
+        };
+        
+        const beliefCtx = document.getElementById('beliefChart');
+        if (beliefCtx) {
+            new Chart(beliefCtx, {
+                type: 'doughnut',
+                data: {
+                    labels: ['Shaman giáo (Ua Neeb)', 'Thờ cúng Tổ tiên', 'Tín ngưỡng Vật linh'],
+                    datasets: [{
+                        label: 'Tầm quan trọng tương đối',
+                        data: [50, 30, 20],
+                        backgroundColor: [
+                            energeticPalette.blue,
+                            energeticPalette.green,
+                            energeticPalette.yellow,
+                        ],
+                        borderColor: '#ffffff',
+                        borderWidth: 4,
+                        hoverOffset: 8
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        ...commonTooltipOptions.plugins,
+                        legend: commonLegendOptions
+                    },
+                    cutout: '60%'
+                }
+            });
+        }
+
+        const conversionDriversCtx = document.getElementById('conversionDriversChart');
+        if (conversionDriversCtx) {
+            const driverLabels = [
+                'Giải pháp Kinh tế (Thoát khỏi lễ tế tốn kém)',
+                'Hiện đại hóa Xã hội (Từ bỏ hủ tục)',
+                'Cộng hưởng Tâm linh (Tương đồng truyền thuyết)',
+                'Mạng lưới Toàn cầu (Kết nối với thế giới)'
+            ];
+
+            new Chart(conversionDriversCtx, {
+                type: 'bar',
+                data: {
+                    labels: driverLabels.map(label => wrapLabel(label, 20)),
+                    datasets: [{
+                        label: 'Mức độ ảnh hưởng (tương đối)',
+                        data: [90, 75, 65, 70],
+                        backgroundColor: [
+                            energeticPalette.green,
+                            energeticPalette.blue,
+                            energeticPalette.yellow,
+                            energeticPalette.red,
+                        ],
+                        borderRadius: 6,
+                        borderSkipped: false,
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            grid: {
+                                display: false,
+                                drawBorder: false,
+                            },
+                            ticks: {
+                                display: false
+                            }
+                        },
+                        y: {
+                            grid: {
+                                display: false,
+                                drawBorder: false,
+                            },
+                            ticks: {
+                                font: {
+                                    size: 14,
+                                    family: "'Be Vietnam Pro', sans-serif",
+                                    weight: '600'
+                                },
+                                color: energeticPalette.dark
+                            }
+                        }
+                    },
+                    plugins: {
+                       ...commonTooltipOptions.plugins,
+                        legend: {
+                            display: false
+                        }
+                    }
+                }
+            });
+        }
+    </script>
+</body>
+</html>
